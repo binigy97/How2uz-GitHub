@@ -2,7 +2,7 @@
 ### 저장소 연결
 - <code>git init</code> : 저장소 초기화
   - 참고 : [저장소 초기화 : git init, git clone][https://www.lainyzine.com/ko/article/git-init-how-to-initialize-git-repository/] 
-- <code>git clone</code> 원격저장소URL : 원격 저장소를 로컬에 복사하기 
+- <code>git clone 원격저장소URL</code> : 원격 저장소를 로컬에 복사하기 
 
 ### 상태 확인
 - <code>git status</code> : 깃 상태(체크아웃된 브랜치 이름, 커밋 내역)(작업 디렉토리와 스테이징 영역의 상태 확인) 확인  
@@ -36,11 +36,11 @@
   - <code>git branch --no-merged</code> : 현재 chekout한 브랜치에 merge하지 않은 브랜치 목록 확인 (해당 리스트의 브랜치들은 -d로 삭제 불가) 
 - <code>git branch 생성브랜치명 분기브랜치명</code> : 분기브랜치명에서 브랜치 생성 
 ```
-  git branch RB_1.0 master 
+  git branch RB_1.0 main 
 ```
-- <code>git branch -d</code> 브랜치명 : 로컬 브랜치 삭제 
-- <code>git branch -D</code> 브랜치명 : 로컬 브랜치 강제 삭제 (merge하지 않은 브랜치도 삭제 가능) 
-- <code>git branch -m</code> 기존브랜치명 변경브랜치명 : 브랜치명 변경 
+- <code>git branch -d 브랜치명</code> : 로컬 브랜치 삭제 
+- <code>git branch -D 브랜치명</code> : 로컬 브랜치 강제 삭제 (merge하지 않은 브랜치도 삭제 가능) 
+- <code>git branch -m 기존브랜치명 변경브랜치명</code> : 브랜치명 변경 
 ```
   git branch -m master main 
 ```
